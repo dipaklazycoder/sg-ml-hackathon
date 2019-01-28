@@ -1,0 +1,11 @@
+Steps:
+
+1.Preprocessed the data, identified the categorical multi-class labels which is the part of features and target column
+2.Used CategoricalImputer for treating missing values
+3.Encoded the categorical data using label encoder and than used Binary encoder for taking each category as a separate column.
+Since there is no ordering of category so we need to convert them into separate column.
+(BinaryEncoder will take less memory as compared to OneHotEncoder)
+4.splitted the data into train/test with 75/25 %.
+5.Created a decision tree model as this was giving better result than RandomForest,Logistic Regression and Naive Bayes, Svc
+6.Validated the model using some metrices confusion metric and also computed the accuracy.
+7.Predicted the output of the test data provided using the model trained.
